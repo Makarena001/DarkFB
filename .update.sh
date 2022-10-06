@@ -26,15 +26,15 @@ check_package() {
     fi
 }
 
-printf "${BLUE}%s${NORMAL}\n" "Updating DarkFB Premium"
+printf "${BLUE}%s${NORMAL}\n" "Updating MICROSITE Premium"
 check_package coreutils
 #check_package figlet
 if git pull origin master
 then
   #printf '%s' "$GREEN"
-  #printf '%s\n' 'DarkFB'
+  #printf '%s\n' 'MICROSITE'
   printf "${BLUE}%s\n" "Hooray! DarkFB has been updated and/or is at the current version."
-  printf "${BLUE}${BOLD}%s${NORMAL}\n" "More information at: https://github.com/JeelsBoobz/DarkFB"
+  printf "${BLUE}${BOLD}%s${NORMAL}\n" "More information at: https://github.com/JeelsBoobz/MICROSITE"
 else
   printf "${RED}%s${NORMAL}\n" 'There was an error updating. Try again later?'
 fi
